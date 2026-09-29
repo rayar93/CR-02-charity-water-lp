@@ -1,47 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>charity: water</title>
+    <meta
+      name="description"
+      content="A landing page for charity: water to help fund clean water projects around the world."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="charity: water home">
+          <img src="img/cw_logo-2.png" alt="charity: water" class="brand-logo" />
+        </a>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+        <nav class="header-nav" aria-label="Main navigation">
+          <a href="#story">Why water</a>
+          <a href="#impact">Impact</a>
+          <a href="#donate">Donate</a>
+        </nav>
+
+        <a
+          class="button button-primary header-button"
+          href="https://www.charitywater.org/donate"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Donate
+        </a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" aria-label="Hero section">
+        <!-- Photo source: Unsplash, photographer unknown, used under the Unsplash license. -->
+        <div class="hero-scrim"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Clean water for every day</p>
+          <h1>Clean water changes everything</h1>
+          <p class="lede">
+            For <span class="nowrap">696 million</span> people, day one of clean water
+            has not happened yet.
+          </p>
+          <a
+            class="button button-primary hero-button"
+            href="https://www.charitywater.org/donate"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Give clean water
+          </a>
         </div>
-    </section>
+      </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
-</body>
+      <section class="stats-band" aria-label="Impact statistics">
+        <div class="container stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">209,241</div>
+            <div class="stat-label">water projects funded</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">29</div>
+            <div class="stat-label">countries</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">21,641,908</div>
+            <div class="stat-label">people will be served</div>
+          </div>
+        </div>
+        <div class="container stats-meta">
+          <a href="https://www.charitywater.org/" target="_blank" rel="noopener noreferrer">
+            charity: water impact to date, September 2026
+          </a>
+        </div>
+      </section>
+
+      <section class="story-section" id="story">
+        <div class="container story-content">
+          <h2>Why water</h2>
+          <p>
+            Water is the difference between a day that starts with hope and a day that
+            starts with survival. When families have to walk long distances to fetch
+            water, they lose time for work, school, and care. The burden falls most
+            heavily on women and girls, who spend hours carrying water instead of
+            building a future.
+          </p>
+          <p>
+            charity: water helps solve that problem at its source. The organization
+            funds water projects that bring safe, reliable access to communities that
+            need it most, with a focus on lasting infrastructure and transparent
+            reporting.
+          </p>
+          <blockquote class="story-quote">
+            “Thanks to generous private donors who fund our operational expenses,
+            <span class="nowrap">100% of your donation</span> directly funds clean water
+            projects.”
+            <cite>
+              <a href="https://www.charitywater.org/" target="_blank" rel="noopener noreferrer">
+                charity: water
+              </a>
+            </cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="impact-section" id="impact">
+        <div class="container impact-layout">
+          <div class="impact-photo-wrap">
+            <img
+              src="images/project-water.jpg"
+              alt="A hand pump and water collection point in a dry landscape"
+              class="impact-photo"
+            />
+          </div>
+          <div class="impact-text">
+            <h2>What your gift builds</h2>
+            <blockquote class="impact-quote">
+              “charity: water uses <span class="nowrap">100% of your donation</span> to fund
+              clean water around the world and then proves every single project you fund,
+              complete with GPS coordinates and photos.”
+              <cite>
+                <a href="https://www.charitywater.org/" target="_blank" rel="noopener noreferrer">
+                  charity: water
+                </a>
+              </cite>
+            </blockquote>
+
+            <div class="cost-grid">
+              <article class="cost-card">
+                <div class="cost-amount">$40</div>
+                <p>
+                  “$40 is the average cost per person to build a charity: water project.”
+                </p>
+                <a
+                  href="https://support.charitywater.org/hc/en-us/articles/207372136-How-much-clean-water-will-my-donation-provide-in-USD"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Source
+                </a>
+              </article>
+
+              <article class="cost-card">
+                <div class="cost-amount">$20 a month</div>
+                <p>
+                  “A gift of just $20 a month is enough to bring six people - an entire family -
+                  clean water each year.”
+                </p>
+                <a href="https://www.charitywater.org/donate/the-spring" target="_blank" rel="noopener noreferrer">
+                  Source
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section" id="donate">
+        <div class="container cta-content">
+          <h2>Give someone their first day</h2>
+          <p>
+            Every gift helps a community move from waiting to water on tap, toilets that
+            work, and a healthier daily rhythm.
+          </p>
+          <a
+            class="button button-inverse"
+            href="https://www.charitywater.org/donate"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Donate now
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand" aria-label="charity: water footer logo">
+          <img src="img/water-can-transparent.png" alt="" aria-hidden="true" class="footer-can" />
+          <span class="nowrap">charity: water</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://www.charitywater.org/" target="_blank" rel="noopener noreferrer">charitywater.org</a>
+          <span>Photo credit: Unsplash</span>
+        </div>
+      </div>
+      <div class="container footer-disclaimer">
+        This is a student project built as a coursework exercise. It is not affiliated with or endorsed by
+        charity: water. Donations are processed on charity: water's own website.
+      </div>
+    </footer>
+  </body>
 </html>
+
