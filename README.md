@@ -1,24 +1,17 @@
-# Week 2 Project: Build the charity: water Landing Page
-To get started, create a new Codespace from this repo.
+# Day One
 
-In this Project, you’ll transform your Canva mockup into a fully functional landing page using HTML and CSS. This is your chance to take your creative concept — with your brand visuals, your messaging, and your imagery — and make it real. You'll build a site that not only looks great, but also educates, inspires, and drives action.
+A browser puzzle game about clean water, built as a game prototype for [charity: water](https://www.charitywater.org/). Rotate pipe tiles to connect a water source to every tap stand on the board before the clock runs out. The name comes from charity: water's own phrase for the first day a community has clean water.
 
-With help from AI to jumpstart your layout, you'll focus on structuring your content, applying your brand style, and creating a polished final product that reflects your vision. By the end of this Project, you’ll have a live, interactive page deployed to the web. You can share this work when you want to showcase your technical skills and your passion for digital storytelling. 
+**Play:** https://rayar93.github.io/day-one/
 
-## charity: water Brand Colors & Fonts
+## How it works
 
-### Primary Colors:
-- Yellow:     `#FFC907`
-- Blue:       `#2E9DF7`
+The whole game is a single `index.html` with no build step and no dependencies beyond a Google Fonts stylesheet.
 
-### Secondary Colors:
-- Light Blue: `#8BD1CB`
-- Green:      `#4FCB53`
-- Orange:     `#FF902A`
-- Red:        `#F5402C`
-- Dark Green: `#159A48`
-- Pink:       `#F16061`
+**Pipes are bitmasks.** Each tile's openings are a 4-bit mask (N=1, E=2, S=4, W=8), so turning a tile is a bit rotation and two neighbors connect when each has an opening facing the other. After every turn, a breadth-first search from the source finds every tile the water reaches, and each tile's distance from the source sets the delay on its animation.
 
-### Fonts:
-- Proxima Nova
-- Avenir
+## Credits and brand
+
+The game was generated with Replit's AI from charity: water's brand guide, as mandated by the Global Career Accelerator assignment it was created for. Every named color comes from the official palette in the guide.
+
+**Day One is a student prototype and is not affiliated with or endorsed by charity: water.** The charity: water name, logo, and quoted figures belong to charity: water and are used here for coursework only.
